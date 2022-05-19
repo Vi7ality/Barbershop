@@ -1,0 +1,302 @@
+/* Background color + font color - #FFFFFF; */
+/* Accent color - #FF6C00 */
+/* Header font color - #303030; */
+/* Main font color - #555555; */
+/* Secondary font color - #555555 */
+/* Third font color -  #9DA4BD */
+
+:root {
+    --main-title-color: #FFFFFF;
+    --second-title-color: #303030;
+    --main-text-color: #9DA4BD;
+    --second-text-color: #555555;
+    --subtitle-color: rgba(157, 164, 189, 0.6);
+    --accent-color: #FF6C00;
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.list {
+    list-style: none ;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.button {
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    background-color: transparent;
+
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* =======HEADER======= */
+
+/* Delete backgroun color */
+.header {
+    background-color: grey;
+}
+.header-link, .header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-title-color);
+}
+
+.header-link:hover, 
+.header-link:focus, 
+.header-tel:hover, 
+.header-tel:focus {
+color: var(--accent-color);
+}
+
+
+
+/* =======HERO======= */
+
+/* Delete background */
+.hero-content{
+    background-color: black;
+}
+
+.hero-networks {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--second-text-color);
+}
+
+.hero-networks:hover, .hero-networks:focus {
+    color: var(--accent-color);
+}
+
+.hero-subtitle {
+    color: var(--subtitle-color);
+}
+
+.hero-title {
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--main-title-color);
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.67;
+    color: var(--main-text-color);
+}
+
+/* ======ABOUT======= */
+
+.about-subtitle, .about-title {
+    color: var(--second-title-color);
+}
+
+.about-first-text {
+    font-size: 18px;
+    line-height: 1.67;
+    color: var(--second-text-color);
+}
+
+.about-second-text {
+    font-size: 14px;
+    line-height: 1.86;
+    color: var(--second-text-color);
+}
+
+.about-btn {
+    color: var(--second-title-color);
+}
+
+/* =======PRICES======== */
+
+/* delete background */
+.prices {
+    background-color: black;
+}
+
+.prices-subtitle {
+    color: var(--subtitle-color);
+}
+
+.prices-title {
+    color: var(--main-title-color);
+}
+
+.prices-item-text {
+    color: var(--main-text-color);
+    font-size: 18px;
+    line-height: 1.67;
+}
+
+/* =======BENEFITS======= */
+
+.benefits-item-value {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: var(--second-title-color);
+}
+
+.benefits-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--second-title-color);
+}
+
+.benefits-subtitle {
+    color: var(--second-title-color);
+}
+
+.benefits-title {
+    color: var(--second-title-color);
+}
+
+.benefits-text {
+    color: var(--second-text-color) ;
+}
+
+/* =======MASTERS======= */
+
+.masters-subtitle {
+    color: var(--second-title-color);
+}
+
+.masters-title {
+    color: var(--second-title-color);
+}
+
+.masters-item-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    color: var(--second-title-color);
+}
+
+.masters-item-staff {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+/* =======EXAMPLES======= */
+
+.examples-subtitle {
+    color: var(--second-title-color);
+}
+
+/* =======REGISTER======== */
+
+/* change bgd */
+.register {
+    color: #191C26;;
+}
+
+.register-title {
+    color: var(--main-title-color);
+}
+
+/* =======CONTACTS======== */
+
+.contacts {
+    background-color: black;
+}
+
+.contacts-title {
+    color: var(--main-title-color);
+}
+
+.contacts-link, .contacts-time {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: inherit;
+    color: var(--main-text-color);
+}
+
+.contacts-subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-title-color);
+}
+
+
+/* =======FOOTER======= */
+
+.footer-copy {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--main-text-color);
+}
+
+.footer-networks {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    color: var(--second-title-color);
+}
+
+.footer-networks:hover, .footer-networks:focus {
+    color: var(--accent-color);
+}
