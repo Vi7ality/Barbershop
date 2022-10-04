@@ -10,10 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <header class="header">
@@ -46,10 +48,35 @@
                     </ul>
                 </div>
                 <div class="hero-content">
-                    <p lang="en" class="hero-subtitle subtitle">A hair salon for men in Kyiv</p>
-                    <h1 lang="en" class="hero-title title">BarberShop</h1>
-                    <p class="hero-text">Мы эксперты в модных мужских стрижках.
-                        Работаем быстро, осторожно и со вкусом.</p>
+                    <div class="hero-main">
+                        <p lang="en" class="hero-subtitle subtitle">A hair salon for men in Kyiv</p>
+                        <h1 lang="en" class="hero-title title">BarberShop</h1>
+                        <p class="hero-text">Мы эксперты в модных мужских стрижках.
+                            Работаем быстро, осторожно и со вкусом.</p>
+                    </div>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/slider-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/slider-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/slider-3.jpg" />
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-buttons">
+                            <div class="swiper-button-prev">Назад</div>
+                            <div class="swiper-button-next">Вперед</div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
                 
                 
@@ -337,8 +364,13 @@
         <div class="contacts-wrap">
             <div class="container">
                 <section class="register">
-                    
                     <h2 class="register-title title">Онлайн-запись</h2>
+                    <form class="register-form">
+                        <label class="register-field">
+                            <input class="register-input" type="text" name="username" required placeholder=" ">
+                            <p class="register-label">Имя*</p>
+                        </label>
+                    </form>
                     
                 
                 </section>
@@ -379,5 +411,25 @@
         </div>
         
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
